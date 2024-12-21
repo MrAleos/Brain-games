@@ -11,3 +11,7 @@
 ### Demo Brain-Even:
 
 [![asciicast](https://asciinema.org/a/695505.svg)](https://asciinema.org/a/695505)
+
+### Demo Brain-Calc
+
+[![asciicast](https://asciinema.org/a/7rcc4woPtrSeJZTaYR6N6jAOC.svg)](https://asciinema.org/a/7rcc4woPtrSeJZTaYR6N6jAOC)

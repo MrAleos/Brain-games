@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
-import isEvenGameLogic from '../src/isEvenGameLogic.js';
+import mainIterforAllGames from '../src/index.js';
+import { description, getGameInfo } from '../src/games/isEvenGame.js';
 
-isEvenGameLogic();
+mainIterforAllGames(getGameInfo, description);
