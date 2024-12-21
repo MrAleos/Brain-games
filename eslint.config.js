@@ -35,6 +35,8 @@ export default [
   ...compat.extends('airbnb-base'),
   {
     rules: {
+      ...importPlugin.configs.recommended.rules,
+      'object-curly-newline': ['error', { multiline: true, consistent: true }],
       'no-underscore-dangle': [
         'error',
         {
