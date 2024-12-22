@@ -12,6 +12,10 @@
 
 [![asciicast](https://asciinema.org/a/695505.svg)](https://asciinema.org/a/695505)
 
-### Demo Brain-Calc
+### Demo Brain-Calc:
 
 [![asciicast](https://asciinema.org/a/7rcc4woPtrSeJZTaYR6N6jAOC.svg)](https://asciinema.org/a/7rcc4woPtrSeJZTaYR6N6jAOC)
+
+### Demo Brain-GCD:
+
+[![asciicast](https://asciinema.org/a/ODTyZSE9QTRBofJWqDJG8mTAh.svg)](https://asciinema.org/a/ODTyZSE9QTRBofJWqDJG8mTAh)

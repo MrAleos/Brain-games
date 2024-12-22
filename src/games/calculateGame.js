@@ -28,6 +28,6 @@ const getGameInfo = () => {
   return [question, correctAnswer];
 };
 
-const discription = () => 'What is the result of the expression?';
+const description = () => 'What is the result of the expression?';
 
-export { getGameInfo, discription };
+export { getGameInfo, description };
