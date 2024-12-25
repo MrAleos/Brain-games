@@ -19,3 +19,7 @@
 ### Demo Brain-GCD:
 
 [![asciicast](https://asciinema.org/a/ODTyZSE9QTRBofJWqDJG8mTAh.svg)](https://asciinema.org/a/ODTyZSE9QTRBofJWqDJG8mTAh)
+
+### Demo Brain-progression:
+
+[![asciicast](https://asciinema.org/a/VuoZm5helFGgbrItebegRCwMF.svg)](https://asciinema.org/a/VuoZm5helFGgbrItebegRCwMF)

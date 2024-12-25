@@ -2,7 +2,7 @@ import randomNumber from '../randomNumber.js';
 
 const randomOperation = () => {
   const operations = ['+', '-', '*'];
-  const randomIndex = Math.floor(Math.random() * operations.length);
+  const randomIndex = randomNumber(operations.length);
   return operations[randomIndex];
 };
 
