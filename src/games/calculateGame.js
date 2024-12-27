@@ -1,4 +1,5 @@
 import randomNumber from '../randomNumber.js';
+import mainIterforAllGames from '../index.js';
 
 const randomOperation = () => {
   const operations = ['+', '-', '*'];
@@ -30,4 +31,8 @@ const getGameInfo = () => {
 
 const description = () => 'What is the result of the expression?';
 
-export { getGameInfo, description };
+const startGame = () => {
+  mainIterforAllGames(getGameInfo, description);
+};
+
+export default startGame;

@@ -1,4 +1,5 @@
 import randomNumber from '../randomNumber.js';
+import mainIterforAllGames from '../index.js';
 
 const isPrime = (number) => {
   if (number <= 1) {
@@ -21,4 +22,8 @@ const getGameInfo = () => {
 
 const description = () => 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-export { getGameInfo, description };
+const startGame = () => {
+  mainIterforAllGames(getGameInfo, description);
+};
+
+export default startGame;

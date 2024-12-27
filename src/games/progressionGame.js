@@ -1,4 +1,5 @@
 import randomNumber from '../randomNumber.js';
+import mainIterforAllGames from '../index.js';
 
 const getGameInfo = () => {
   const lengthNumber = randomNumber(10, 5);
@@ -23,4 +24,8 @@ const getGameInfo = () => {
 
 const description = () => 'What number is missing in the progression?';
 
-export { getGameInfo, description };
+const startGame = () => {
+  mainIterforAllGames(getGameInfo, description);
+};
+
+export default startGame;
