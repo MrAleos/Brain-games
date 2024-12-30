@@ -15,9 +15,9 @@ const run = (generateRound, description) => {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. \nLet's try again, ${name}!`);
       return;
     }
-      console.log('Correct!');
+    console.log('Correct!');
   }
-    console.log(`Congratulations, ${name}!`);
+  console.log(`Congratulations, ${name}!`);
 };
 
 export default run;
