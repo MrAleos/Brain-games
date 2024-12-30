@@ -14,9 +14,8 @@ const run = (generateRound, description) => {
     if (userAnswer !== correctAnswer) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. \nLet's try again, ${name}!`);
       return;
-    } else {
-      console.log('Correct!');
     }
+      console.log('Correct!');
   }
     console.log(`Congratulations, ${name}!`);
 };
