@@ -1,5 +1,5 @@
 import randomNumber from '../randomNumber.js';
-import mainIterforAllGames from '../index.js';
+import run from '../index.js';
 
 const randomOperation = () => {
   const operations = ['+', '-', '*'];
@@ -24,7 +24,7 @@ const getGameInfo = () => {
   const operation = randomOperation();
   const numberOne = randomNumber();
   const numberTwo = randomNumber();
-  const correctAnswer = calculate(numberOne, numberTwo, operation);
+  const correctAnswer = calculate(numberOne, numberTwo, operation).toString();
   const question = `Question: ${numberOne} ${operation} ${numberTwo}`;
   return [question, correctAnswer];
 };
@@ -32,7 +32,7 @@ const getGameInfo = () => {
 const description = () => 'What is the result of the expression?';
 
 const startGame = () => {
-  mainIterforAllGames(getGameInfo, description);
+  run(getGameInfo, description);
 };
 
 export default startGame;

@@ -1,5 +1,5 @@
 import randomNumber from '../randomNumber.js';
-import mainIterforAllGames from '../index.js';
+import run from '../index.js';
 
 const isEven = (value) => (value % 2 === 0 ? 'yes' : 'no');
 
@@ -13,7 +13,7 @@ const getGameInfo = () => {
 const description = () => 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const startGame = () => {
-  mainIterforAllGames(getGameInfo, description);
+  run(getGameInfo, description);
 };
 
 export default startGame;

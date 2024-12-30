@@ -1,5 +1,5 @@
 import randomNumber from '../randomNumber.js';
-import mainIterforAllGames from '../index.js';
+import run from '../index.js';
 
 const gcd = (a, b) => {
   let numberOne = a;
@@ -16,14 +16,14 @@ const getGameInfo = () => {
   const numberOne = randomNumber();
   const numberTwo = randomNumber();
   const question = `Question: ${numberOne} ${numberTwo}`;
-  const correctAnswer = gcd(numberOne, numberTwo);
+  const correctAnswer = gcd(numberOne, numberTwo).toString();
   return [question, correctAnswer];
 };
 
 const description = () => 'Find the greatest common divisor of given numbers.';
 
 const startGame = () => {
-  mainIterforAllGames(getGameInfo, description);
+  run(getGameInfo, description);
 };
 
 export default startGame;

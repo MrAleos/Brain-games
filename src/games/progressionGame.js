@@ -1,5 +1,5 @@
 import randomNumber from '../randomNumber.js';
-import mainIterforAllGames from '../index.js';
+import run from '../index.js';
 
 const getGameInfo = () => {
   const lengthNumber = randomNumber(10, 5);
@@ -19,13 +19,13 @@ const getGameInfo = () => {
   }
   const question = `Question: ${progressionArray.join(' ')}`;
 
-  return [question, correctAnswer];
+  return [question, correctAnswer.toString()];
 };
 
 const description = () => 'What number is missing in the progression?';
 
 const startGame = () => {
-  mainIterforAllGames(getGameInfo, description);
+  run(getGameInfo, description);
 };
 
 export default startGame;
