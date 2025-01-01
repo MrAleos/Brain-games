@@ -1,11 +1,11 @@
-import randomNumber from '../randomNumber.js';
+import getRandomNumber from '../randomNumber.js';
 import run from '../index.js';
 
 const getGameInfo = () => {
-  const lengthNumber = randomNumber(10, 5);
-  const randomizerNumberStep = randomNumber(lengthNumber - 1);
-  const progressionStep = randomNumber(10, 1);
-  const startValue = randomNumber(20);
+  const lengthNumber = getRandomNumber(10, 5);
+  const randomizerNumberStep = getRandomNumber(lengthNumber - 1);
+  const progressionStep = getRandomNumber(10, 1);
+  const startValue = getRandomNumber(20);
   const progressionArray = [];
   let correctAnswer = 0;
   let valueTemp = startValue;
@@ -22,7 +22,7 @@ const getGameInfo = () => {
   return [question, correctAnswer.toString()];
 };
 
-const description = () => 'What number is missing in the progression?';
+const description = 'What number is missing in the progression?';
 
 const startGame = () => {
   run(getGameInfo, description);
