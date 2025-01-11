@@ -9,7 +9,7 @@ const run = (generateRound, description) => {
   console.log(description);
   for (let i = 0; i < roundsCount; i += 1) {
     const [question, correctAnswer] = generateRound();
-    console.log(question);
+    console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer !== correctAnswer) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. \nLet's try again, ${name}!`);

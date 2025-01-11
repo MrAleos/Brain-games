@@ -1,23 +1,28 @@
-import getRandomNumber from '../randomNumber.js';
+import getRandomNumber from '../getRandomNumber.js';
 import run from '../index.js';
+
+const generateProgression = (start, step, length, hiddenIndex) => {
+  const progression = [];
+  for (let i = 0; i < length; i += 1) {
+    if (i === hiddenIndex) {
+      progression.push('..');
+    } else {
+      progression.push(start + i * step);
+    }
+  }
+  return progression;
+};
 
 const getGameInfo = () => {
   const lengthNumber = getRandomNumber(10, 5);
-  const randomizerNumberStep = getRandomNumber(lengthNumber - 1);
+  const hiddenIndex = getRandomNumber(lengthNumber - 1);
   const progressionStep = getRandomNumber(10, 1);
   const startValue = getRandomNumber(20);
-  const progressionArray = [];
-  let correctAnswer = 0;
-  let valueTemp = startValue;
-  for (let i = 0; i < lengthNumber; i += 1) {
-    progressionArray[i] = valueTemp;
-    if (i === randomizerNumberStep) {
-      correctAnswer = progressionArray[i];
-      progressionArray[i] = '..';
-    }
-    valueTemp += progressionStep;
-  }
-  const question = `Question: ${progressionArray.join(' ')}`;
+  const correctAnswer = startValue + hiddenIndex * progressionStep;
+  // eslint-disable-next-line max-len
+  const progressionArray = generateProgression(startValue, progressionStep, lengthNumber, hiddenIndex);
+
+  const question = `${progressionArray.join(' ')}`;
 
   return [question, correctAnswer.toString()];
 };

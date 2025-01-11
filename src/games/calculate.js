@@ -1,11 +1,5 @@
-import getRandomNumber from '../randomNumber.js';
+import getRandomNumber from '../getRandomNumber.js';
 import run from '../index.js';
-
-const randomOperation = () => {
-  const operations = ['+', '-', '*'];
-  const randomIndex = getRandomNumber(operations.length - 1);
-  return operations[randomIndex];
-};
 
 const calculate = (numberOne, numberTwo, operation) => {
   switch (operation) {
@@ -20,19 +14,22 @@ const calculate = (numberOne, numberTwo, operation) => {
   }
 };
 
-const getGameInfo = () => {
-  const operation = randomOperation();
+const generateRound = () => {
+  const operations = ['+', '-', '*'];
+  const randomIndex = getRandomNumber(operations.length - 1);
+  const operation = operations[randomIndex];
+
   const numberOne = getRandomNumber();
   const numberTwo = getRandomNumber();
   const correctAnswer = calculate(numberOne, numberTwo, operation).toString();
-  const question = `Question: ${numberOne} ${operation} ${numberTwo}`;
+  const question = `${numberOne} ${operation} ${numberTwo}`;
   return [question, correctAnswer];
 };
 
 const description = 'What is the result of the expression?';
 
 const startGame = () => {
-  run(getGameInfo, description);
+  run(generateRound, description);
 };
 
 export default startGame;
