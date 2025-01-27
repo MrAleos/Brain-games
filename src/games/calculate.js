@@ -10,7 +10,7 @@ const calculate = (numberOne, numberTwo, operation) => {
     case '*':
       return numberOne * numberTwo;
     default:
-      return 'Invalid operation';
+      throw new Error('Error');
   }
 };
 
