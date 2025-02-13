@@ -4,7 +4,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/cfbd53076169dd9dcba2/maintainability)](https://codeclimate.com/github/MrAleos/frontend-project-44/maintainability)
 
 # Brain Games
-his is an educational project from Hexlet, consisting of five console games, such as:
+This is an educational project from Hexlet, consisting of five console games, such as:
 - brain-calc - launches the game "Even Number Check
 - brain-even - launches the game "Calculator"
 - brain-gcd - launches the game "Greatest Common Divisor"
